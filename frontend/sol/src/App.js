@@ -13,7 +13,7 @@ import '@solana/wallet-adapter-react-ui/styles.css'; // Default styles for walle
 
 function App() {
   // Solana network (e.g., devnet, mainnet-beta, testnet)
-  const network = "devnet";
+  const network = "localhost";
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   // Wallets to support

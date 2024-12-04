@@ -1,18 +1,37 @@
 {
   "name": "sol-coin-flip",
   "version": "1.0.0",
-  "description": "A Solana coin flip game frontend",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.41.1",
-    "@project-serum/anchor": "^0.27.0"
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.93.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-app-rewired": "^2.2.1"
   },
-  "author": "Your Name",
-  "license": "ISC"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
